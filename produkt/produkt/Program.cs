@@ -5,12 +5,11 @@
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            bool useAlphaBetaPruning = false;
+            //new krydsOgBolle(useMiniMax: true, lockProbability: 0.25);
 
-            krydsOgBolle.Benchmark();
-            krydsOgBolle.SelfPlayExperiment(games: 1000, randomPlies: 2);
-            //krydsOgBolle game = new krydsOgBolle(true, useAlphaBetaPruning);
+            //krydsOgBolle.ValidateExpectiMinimax();
+            krydsOgBolle.SelfPlayExperiment(20000);
+            //krydsOgBolle.RandomnessTournament(gamesPerSetting: 20000);
         }
     }
 }
